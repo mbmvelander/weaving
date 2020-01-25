@@ -2,7 +2,7 @@ import numpy.random
 from util import calc
 
 
-n_threads = 1532
+n_threads = 7
 n_colours = 5
 sigma = 120.0
 max_jump = 50
@@ -138,7 +138,7 @@ def place_threads(n_threads_per_colour, colour_centers, prefer_edges=False):
 
 
 def main():
-    n_threads_per_colour = calc.split_threads(n_threads, n_colours)
+    n_threads_per_colour = calc.split_threads(n_threads, n_colours, True, 2)
     colour_centers = get_colour_centers(n_threads_per_colour)
     placement = place_threads(n_threads_per_colour, colour_centers, PREFER_EDGES)
     print(",".join(str(x) for x in placement))

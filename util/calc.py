@@ -35,6 +35,12 @@ def split_threads(n_threads, n_batches=1, peak_at_center=False, divisible_by=1):
     # Find the largest number divisible by both n_batches and divisible_by
     number_to_split = largest_divisible_by_all(n_threads, [divisible_by, n_batches])
 
+    # If we can't find such a number, then set all batches to zero, effectively
+    # splitting into a fewer number of batches (since the remainder will be split according
+    # to divisible_by below)
+    if number_to_split == None:
+        number_to_split = 0
+
     # Evenly distribute this number across batches
     n_per_batch = [int(number_to_split/n_batches)] * n_batches
 
@@ -91,7 +97,7 @@ def largest_divisible_by_all(number, divisible_by):
     divisible_by_cp.sort(reverse=True)
     largest_in_list = divisible_by_cp[0]
     number_to_test = number - (number % largest_in_list)
-    while True:
+    while number_to_test > 0:
         # Step down by the largest number in the divisible_by list
         number_to_test -= largest_in_list
         div_by_all = True
@@ -101,3 +107,4 @@ def largest_divisible_by_all(number, divisible_by):
                 break
         if div_by_all:
             return number_to_test
+    return None
