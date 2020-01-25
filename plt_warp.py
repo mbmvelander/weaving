@@ -18,7 +18,7 @@ def read_threads():
 def get_braids(threads_in, n_braids):
     threads = threads_in
     n_threads = len(threads)
-    n_threads_per_braid = calc.split_threads(n_threads, n_braids, more_in_center=True, divisible_by=N_PER_LANG_PAIR)
+    n_threads_per_braid = calc.split_threads(n_threads, n_braids, peak_at_center=True, divisible_by=N_PER_LANG_PAIR)
     braids = []
     for n_threads_in_braid in n_threads_per_braid:
         braid = []
