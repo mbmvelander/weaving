@@ -1,0 +1,112 @@
+density: 10.0
+extra_ends: 4
+name: Pebbles
+pattern_ends: 4
+products:
+- fringes: 0.0
+  hems: 9.0
+  length: 520.0
+  name: Jade Pebbles
+  ordinal: 3
+  yarn:
+  - amount_available: 0.95
+    colour: oblekt
+    currency: GBP
+    dye_colour: Forrest Green
+    dye_type: Dharma Trading Acid Powder Dyes
+    m_per_kg: 6000.0
+    material: Saltwater Rose spun silk
+    price_per_kg: 147.3684210526316
+    thickness: 12/2 ne
+    url: https://saltwaterrose.com/product/spun-silk-12-2nm/
+- fringes: 0.0
+  hems: 9.0
+  length: 520.0
+  name: Amethyst Pebbles
+  ordinal: 2
+  yarn:
+  - amount_available: 0.9
+    colour: oblekt
+    currency: GBP
+    dye_colour: Blue Violet (T)
+    dye_type: Dharma Trading Fibre Reactive Powder Dyes
+    m_per_kg: 6770.0
+    material: Saltwater Rose rose
+    price_per_kg: 106.66666666666666
+    thickness: 16/4 ne
+    url: https://saltwaterrose.com/product/164ne-rose/
+- fringes: 0.0
+  hems: 9.0
+  length: 520.0
+  name: Onyx Pebbles
+  ordinal: 4
+  yarn:
+  - amount_available: 1.2
+    colour: oblekt
+    currency: GBP
+    dye_colour: True Black
+    dye_type: Dharma Trading Acid Powder Dyes
+    m_per_kg: 6770.0
+    material: Saltwater Rose spun mulberry silk 51%/merino wool 29%/SeaCell 20%
+    price_per_kg: 110.0
+    thickness: 16/2 nm
+    url: https://saltwaterrose.com/product/spun-mulberry-silk-51-merino-wool-29-seacell-20-16-2nm-cone/
+- fringes: 0.0
+  hems: 9.0
+  length: 520.0
+  name: Amber Pebbles
+  ordinal: 1
+  yarn:
+  - amount_available: 0.95
+    colour: oblekt
+    currency: GBP
+    dye_colour: Orange Sorbet
+    dye_type: Dharma Trading Fibre Reactive Powder Dyes
+    m_per_kg: 6770.0
+    material: Saltwater Rose bast pineapple/long staple cotton
+    price_per_kg: 103.15789473684211
+    thickness: 8/2 ne
+    url: https://saltwaterrose.com/product/bast-pineapple-long-staple-cotton-82ne/
+- fringes: 0.0
+  hems: 9.0
+  length: 150.0
+  name: Badlakan
+  ordinal: 5
+  yarn:
+  - colour: multi
+    currency: SEK
+    currency_conversion: 1.0
+    m_per_kg: 5800.0
+    material: Garnhuset i Kinna lin/bomull effekt
+    price_per_kg: 480.0
+    thickness: '6.0'
+shrinkage:
+  width: 15.0
+width: 70.0
+yarn:
+- colour: oblekt
+  currency: SEK
+  currency_conversion: 1.0
+  fraction: 0.875
+  m_per_kg: 6400.0
+  material: Garnhuset i Kinna bom-lin
+  price_per_kg: 280.0
+  thickness: 22/2
+  url: https://www.garnhusetkinna.se/22-2-bomull-lin
+- colour: oblekt
+  currency: SEK
+  currency_conversion: 1.0
+  fraction: 0.0625
+  m_per_kg: 10000.0
+  material: Garnhuset i Kinna bom-lin
+  price_per_kg: 320.0
+  thickness: 33/2
+  url: https://www.garnhusetkinna.se/33-2-bomull-lin
+- colour: oblekt
+  currency: SEK
+  currency_conversion: 1.0
+  fraction: 0.0625
+  m_per_kg: 5800.0
+  material: Garnhuset i Kinna lin/bomull effekt
+  price_per_kg: 480.0
+  thickness: '6.0'
