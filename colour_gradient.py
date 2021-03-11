@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import numpy.random
 from util import calc
 

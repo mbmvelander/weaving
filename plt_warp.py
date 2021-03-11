@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 from util import calc
 from util.plotting import draw_plot
