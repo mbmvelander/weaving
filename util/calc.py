@@ -91,7 +91,7 @@ def largest_divisible_by_all(number, divisible_by):
     # test number is not divisible by the largest number in the list, and logic is
     # extended to check numbers largest to smallest
     if isinstance(divisible_by, list):
-        divisible_by_cp = divisible_by.copy()
+        divisible_by_cp = [e for e in divisible_by]
     else:
         divisible_by_cp = [divisible_by]
     divisible_by_cp.sort(reverse=True)
@@ -99,7 +99,6 @@ def largest_divisible_by_all(number, divisible_by):
     number_to_test = number - (number % largest_in_list)
     while number_to_test > 0:
         # Step down by the largest number in the divisible_by list
-        number_to_test -= largest_in_list
         div_by_all = True
         for test_num in divisible_by_cp[1:]:
             div_by_all = div_by_all and (number_to_test % test_num == 0)
@@ -107,4 +106,5 @@ def largest_divisible_by_all(number, divisible_by):
                 break
         if div_by_all:
             return number_to_test
+        number_to_test -= largest_in_list
     return None

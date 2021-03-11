@@ -16,7 +16,7 @@ COLOURS = [
 def draw_plot(threads_in):
     threads = threads_in
     width = len(threads)
-    height = int(width/5)
+    height = int(width*5)
     image = Image.new("RGB", (width, height), black)
     draw = ImageDraw.Draw(image)
 
