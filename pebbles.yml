@@ -8,6 +8,9 @@ products:
   length: 520.0
   name: Jade Pebbles
   ordinal: 3
+  price:
+    additional_costs:
+      - 100.0 # Sewing on pebbles
   yarn:
   - amount_available: 0.95
     colour: oblekt
@@ -93,6 +96,7 @@ yarn:
   price_per_kg: 280.0
   thickness: 22/2
   url: https://www.garnhusetkinna.se/22-2-bomull-lin
+  this_for_extra_ends: true
 - colour: oblekt
   currency: SEK
   currency_conversion: 1.0
@@ -108,5 +112,8 @@ yarn:
   fraction: 0.0625
   m_per_kg: 5800.0
   material: Garnhuset i Kinna lin/bomull effekt
-  price_per_kg: 480.0
+  price_per_kg: 460.0
   thickness: '6.0'
+price:
+  dyeing_warp_per_meter: 0.
+  dyeing_weft_per_meter: 38.
