@@ -13,8 +13,20 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 
+
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
+
+class Wrap(StrEnum):
+    SNOWY_SUNRISE = "Snowy Sunrise"
+    MISTY_MORNING = "Misty Morning"
+    HARVEST_MOON = "Harvest Moon"
+    NEW_MOON = "New Moon"
+    AMBER_PEBBLES = "Amber Pebbles"
+    AMETHYST_PEBBLES = "Amethyst Pebbles"
+    JADE_PEBBLES = "Jade Pebbles"
+    ONYX_PEBBLES = "Onyx Pebbles"
 
 
 class RowIndex(IntEnum):
@@ -26,11 +38,6 @@ class RowIndex(IntEnum):
     PERCENTAGE = 5
     T_USED = 6
     DATE_USED = 7
-
-
-class Wrap(StrEnum):
-    AMBER_PEBBLES = "Amber Pebbles"
-    AMETHYST_PEBBLES = "Amethyst Pebbles"
 
 
 class GoogleSheet:
